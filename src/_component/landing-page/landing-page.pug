@@ -1,0 +1,22 @@
+-
+  var myName = "insert name here"
+  var job = "undefined shit"
+  var socialList = [
+    {icon : "facebook-with-circle", url: "https://facebook.com"},
+    {icon : "twitter-with-circle", url: "https://twitter.com"},
+    {icon : "google-with-circle", url: "https://googleplus.com"},
+    {icon : "soundcloud", url: "https://soundcloud.com"},
+    {icon : "skype-with-circle", url: "https://skype.com"},
+    {icon : "github-with-circle", url: "https://github.com"},
+    {icon : "linkedin-with-circle", url: "https://linkedin.com"}
+  ]
+#landing-page
+.landing-page
+  .landing-page__wrapper
+  h2.landing-page__name=myName
+  h1.landing-page__title=job
+  ul.landing-page__social
+    each social in socialList
+      li.landing-page__item
+        label.landing-page__label(for="")
+          span(class=`cv-font__icon--${social.icon}`)
